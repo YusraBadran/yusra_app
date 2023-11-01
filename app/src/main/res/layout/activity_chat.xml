@@ -5,7 +5,9 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:padding="20dp"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:background="@drawable/chat_bg"
     tools:context=".ChatActivity">
 
     <EditText
@@ -13,20 +15,30 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Type Your Question here"
-        android:textSize="20sp"/>
+        android:textSize="20sp"
+        android:padding="10dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/custom2_edittext"
+        android:textColorHint="@color/gray"
+        android:textColor="@color/white"
+        />
 
     <Button
-        android:id="@+id/btnSent"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Sent"
-        android:layout_marginTop="20dp"
-        android:layout_marginBottom="20dp"/>
+        android:id="@+id/btnSubmit"
+        android:layout_width="124dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="20dp"
+        android:text="Submit" />
+
     <TextView
         android:id="@+id/txtResponse"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Your Response Will Appear Here"
+        android:hint="Your Response Will Appear Here!"
+        android:textColorHint="@color/gray"
+        android:layout_marginTop="27dp"
+        android:gravity="center"
         android:textSize="20sp"/>
 
 

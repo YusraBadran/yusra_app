@@ -19,10 +19,12 @@
             android:exported="false" />
         <activity
             android:name=".signupActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:noHistory="false"/>
         <activity
             android:name=".loginActivity"
-            android:exported="true">
+            android:exported="true"
+            android:noHistory="true">
 
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
